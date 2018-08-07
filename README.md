@@ -1,0 +1,3 @@
+# TemplateConsoleJPA
+
+JPA MYSQL CONSOLE APP
