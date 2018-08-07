@@ -10,11 +10,13 @@ import edu.mum.cs.cs425.lesson10.jpademoapp.model.Account;
 
 public class App {
 	
-	private static final String PERSISTENCE_UNIT_NAME = "MySWEBasicJavaWebApp1";
+	private static final String PERSISTENCE_UNIT_NAME = "edu.mum.cs.cs425.lesson10.jpademoapp.model.Account";
     private static EntityManagerFactory factory;
     
     public App() {
-    	factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
+        factory = Persistence.createEntityManagerFactory( "Eclipselink_JPA" );
+        EntityManager entitymanager = factory.createEntityManager( );
+        entitymanager.getTransaction( ).begin( );
     }
 
 	public static void main(String[] args) {
