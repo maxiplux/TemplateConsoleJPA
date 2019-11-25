@@ -6,7 +6,7 @@
   <name>MySWEBasicJPADemoApp</name>
   <description>MySWEBasicJPADemoApp</description>
     <properties>
-        <hibernate.version>5.2.2.Final</hibernate.version>
+        <hibernate.version>5.4.9.Final</hibernate.version>
     </properties>
   <dependencies>
 	<dependency>
